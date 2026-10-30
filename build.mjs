@@ -1,6 +1,8 @@
 import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
 const data = JSON.parse(await readFile(new URL('./content.json', import.meta.url), 'utf8'));
+const styleVersion = createHash('sha256').update(await readFile(new URL('./styles.css', import.meta.url))).digest('hex').slice(0, 12);
 const escape = (value) => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const arrow = '<span aria-hidden="true">↗</span>';
 const link = (url, label, cls = '') => `<a class="${cls}" href="${escape(url)}">${escape(label)} ${arrow}</a>`;
@@ -24,7 +26,7 @@ const html = `<!doctype html>
   <meta property="og:url" content="https://sidharthanup.github.io/">
   <link rel="canonical" href="https://sidharthanup.github.io/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=${styleVersion}">
   <script src="script.js" defer></script>
 </head>
 <body>
