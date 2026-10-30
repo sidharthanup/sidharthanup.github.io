@@ -1,0 +1,92 @@
+{
+  "name": "Sidharth Anupkrishnan",
+  "role": "PhD researcher in Computer Science",
+  "institution": "University of Massachusetts Amherst",
+  "advisor": "Prof. VP Nguyen",
+  "email": "sanupkrishna@umass.edu",
+  "linkedin": "https://www.linkedin.com/in/sidharthanup",
+  "github": "https://github.com/sidharthanup",
+  "intro": "I develop multimodal wearable sensing systems to understand human engagement and behavior. My research brings together EEG, eye tracking, electrodermal activity, biosignal processing, human-subject studies, and machine learning.",
+  "researchInterests": ["Wearable sensing", "Biosignal processing", "Multimodal machine learning", "Human engagement", "Physiological foundation models"],
+  "currentResearch": [
+    {
+      "title": "EEG foundation models for wearable sensing",
+      "period": "August 2026–present",
+      "description": "Benchmarking pretrained EEG foundation models on wearable datasets, with a focus on reference configurations, electrode-position shifts, and robustness when transferring from conventional scalp EEG to wearable sensors."
+    },
+    {
+      "title": "Fetal health and continuous blood pressure monitoring",
+      "period": "June 2026–present",
+      "description": "Developing an ear-based fetal monitoring device and a biosignal hub for synchronized acquisition from ultrasound, an ECG belt, and ear-worn sensors. Investigating continuous blood pressure monitoring through pulse arrival time from in-ear PPG and chest ECG."
+    },
+    {
+      "title": "Inter-brain synchrony with wearable EEG",
+      "period": "March 2026–present",
+      "collaboration": "Dolby Laboratories",
+      "description": "Building a wearable EEG platform to investigate group synchrony as a proxy for classroom engagement, including the reliability and artifact sensitivity of frontal and over-the-ear channels."
+    }
+  ],
+  "manuscripts": [
+    {
+      "title": "E3Sense: Head-Confined Multimodal Sensing of Learner Engagement",
+      "role": "Co-first author",
+      "status": "Submitted to ACM CHI · Preprint available",
+      "year": 2026,
+      "description": "A head-mounted platform integrating EEG, eye tracking, and forehead EDA. A 30-participant study collected 450 engagement ratings; evaluation on 15 held-out forehead-sensing participants achieved 75.0% balanced within-one-level prediction versus a 63.0% majority-rating baseline.",
+      "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2609.26569"}]
+    },
+    {
+      "title": "Multimodal Engagement Decoding During Live Classroom Lectures",
+      "role": "Co-first author",
+      "status": "Submitted to IEEE ICASSP · Poster presented at CNS 2026",
+      "year": 2026,
+      "description": "A 12-participant live-lecture study synchronizing scalp EEG, wearable EEG, eye tracking, and instructor speech. A multimodal CRNN using headband EEG, gaze, and the speech envelope achieved MAE 0.628 and 91.2% balanced within-one accuracy on held-out participants.",
+      "links": []
+    },
+    {
+      "title": "EMG-FoundBench: Benchmarking EMG Foundation Models",
+      "role": "Co-author",
+      "status": "Under review at ICLR 2027",
+      "year": 2026,
+      "description": "A unified benchmark spanning 20 public datasets, more than one million EMG segments, and nine pretrained foundation models. My contributions include standardized preprocessing and evaluation across transfer, cross-user generalization, few-shot adaptation, and EMG-to-text decoding.",
+      "links": []
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Nokia Bell Labs",
+      "role": "Research Scientist Intern",
+      "period": "June–August 2024",
+      "location": "Cambridge, UK",
+      "description": "Developed adaptive load balancing for stateful applications on the OmniBuds earable platform, and explored TinyML model partitioning and collaborative inference across earbuds. A patent was filed."
+    },
+    {
+      "organization": "IBM",
+      "role": "Software Engineer",
+      "period": "June 2019–August 2021",
+      "description": "Distributed storage design for machine learning and high-performance computing workloads."
+    },
+    {
+      "organization": "Red Hat",
+      "role": "Associate Software Engineer",
+      "period": "August 2018–June 2019",
+      "description": "Logging pipelines for distributed storage."
+    },
+    {
+      "organization": "Solarillion Foundation",
+      "role": "Research project · Embedded activity recognition",
+      "period": "May 2017–April 2018",
+      "description": "Optimized an embedded human activity recognition system across computational complexity, energy consumption, and cost using compact features and machine learning models."
+    }
+  ],
+  "education": [
+    {"degree": "PhD in Computer Science", "institution": "University of Massachusetts Amherst", "period": "September 2023–June 2028 (expected)"},
+    {"degree": "Master’s in Computer Science", "institution": "University of Massachusetts Amherst", "period": "September 2021–August 2023"},
+    {"degree": "Bachelor’s in Mechanical Engineering", "institution": "SRM Institute of Science and Technology", "period": "July 2014–July 2018"}
+  ],
+  "skills": {
+    "Programming and analysis": ["Python", "PyTorch", "MNE", "NumPy", "Pandas", "scikit-learn", "TensorFlow", "MATLAB / EEGLAB", "C", "C++", "Go"],
+    "Wearable systems": ["Pupil Labs Neon", "EmotiBit", "Frenz EEG", "OpenBCI Cyton", "OmniBuds", "XReal AR glasses"],
+    "Embedded and infrastructure": ["ESP32", "MAX78000", "Arduino", "Docker", "Kubernetes", "Prometheus", "Gluster", "Ceph"]
+  }
+}
