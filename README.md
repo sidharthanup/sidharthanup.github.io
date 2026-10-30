@@ -8,7 +8,7 @@ Update `content.json`, then run `node build.mjs` to regenerate `index.html`. Pre
 
 Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory, then open http://127.0.0.1:4173/.
 
-The downloadable CV is `assets/Sidharth_Anupkrishnan_CV.pdf`. Replace it with a newer PDF to update it. Only the publicly available E3Sense preprint is linked; other local manuscripts and the transcript are not copied into this project.
+The downloadable CV is `assets/Sidharth_Anupkrishnan_CV.pdf`. Replace it with a newer PDF to update it. Publicly available E3Sense and EMG-FM-Bench preprints are linked; local manuscripts and the transcript are not copied into this project.
 
 ## Publish to GitHub Pages
 

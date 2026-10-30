@@ -44,12 +44,12 @@
       "links": []
     },
     {
-      "title": "EMG-FoundBench: Benchmarking EMG Foundation Models",
+      "title": "EMG-FM-Bench: A Comprehensive Benchmark for Foundation Model Transfer and Adaptation on Electromyography",
       "role": "Co-author",
-      "status": "Under review at ICLR 2027",
+      "status": "Under review at ICLR 2027 · Preprint available",
       "year": 2026,
       "description": "A unified benchmark spanning 20 public datasets, more than one million EMG segments, and nine pretrained foundation models. My contributions include standardized preprocessing and evaluation across transfer, cross-user generalization, few-shot adaptation, and EMG-to-text decoding.",
-      "links": []
+      "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2610.06450"}]
     }
   ],
   "experience": [
