@@ -64,7 +64,8 @@
       "organization": "IBM",
       "role": "Software Engineer",
       "period": "June 2019–August 2021",
-      "description": "Distributed storage design for machine learning and high-performance computing workloads."
+      "description": "Distributed storage design for machine learning and high-performance computing workloads.",
+      "links": [{"label": "Patent: Automated pinning of file system subtrees", "url": "https://patents.justia.com/patent/20220050819"}]
     },
     {
       "organization": "Red Hat",

@@ -11,6 +11,8 @@ Verified external links:
 - LinkedIn: https://www.linkedin.com/in/sidharthanup
 - E3Sense preprint: https://arxiv.org/abs/2609.26569
 - EMG-FM-Bench preprint (user supplied; title verified against arXiv): https://arxiv.org/abs/2610.06450
+- IBM experience patent link (placement requested by user): https://patents.justia.com/patent/20220050819
+- Patent title and inventorship verified via https://patents.google.com/patent/US20220050819A1/en (lists Red Hat, Inc. as assignee; no IBM ownership claim is made).
 
 Design references supplied by the user:
 
