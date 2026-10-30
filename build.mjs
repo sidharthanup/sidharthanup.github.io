@@ -44,14 +44,9 @@ const html = `<!doctype html>
         <p class="advisor">PhD researcher, advised by <a href="https://people.cs.umass.edu/~phuc/">Prof. VP Nguyen</a>.</p>
         <div class="hero-actions">${link('assets/Sidharth_Anupkrishnan_CV.pdf', 'View my CV', 'button')} ${link('mailto:' + data.email, 'Get in touch', 'text-link')}</div>
       </div>
-      <aside class="focus-panel" aria-labelledby="focus-title">
-        <div class="focus-heading"><p class="eyebrow" id="focus-title">A window into my research</p><span aria-hidden="true">SIGNALS → INSIGHT</span></div>
-        <svg class="signal" viewBox="0 0 360 92" role="img" aria-label="Stylized physiological signal"><path class="signal-guide" d="M0 46H360"/><path d="M0 46H26L34 42L42 51L51 44L60 46H79L86 34L92 59L99 19L106 77L114 38L123 47H149L156 41L164 52L173 46H194L202 36L211 57L219 25L227 68L235 41L244 46H270L279 40L288 53L297 44L307 46H360"/></svg>
-        <h2>Small sensors.<br><em>Human questions.</em></h2>
-        <p class="focus-intro">Connecting physiological signals to engagement, behavior, and health.</p>
-        <dl class="modalities"><div><dt><span class="modality-dot"></span>EEG</dt><dd>Neural activity</dd></div><div><dt><span class="modality-dot"></span>Eye tracking</dt><dd>Visual attention</dd></div><div><dt><span class="modality-dot"></span>EDA</dt><dd>Electrodermal activity</dd></div></dl>
-        <div class="focus-footer"><span>Wearable sensing</span><span aria-hidden="true">→</span><span>Machine learning</span></div>
-      </aside>
+      <div class="hero-visual">
+      <figure class="portrait"><img src="assets/Sid.jpg" alt="Sidharth Anupkrishnan" width="933" height="1400" fetchpriority="high"><figcaption>Sidharth Anupkrishnan <span>UMass Amherst</span></figcaption></figure>
+      </div>
     </section>
     <div class="interest-strip wrap" aria-label="Research interests">${data.researchInterests.map(t => `<span>${escape(t)}</span>`).join('')}</div>
     <section id="research" class="section wrap" aria-labelledby="research-title"><div class="section-heading"><div><p class="eyebrow">01 / In progress</p><h2 id="research-title">Current research</h2></div><p>From physiological signals<br>to real-world understanding.</p></div><div class="research-list">${research}</div></section>
