@@ -58,7 +58,7 @@ const html = `<!doctype html>
         <h1 id="name">${escape(data.name)}</h1>
         <p>I'm a PhD student in Computer Science at the University of Massachusetts Amherst, advised by <a href="https://people.cs.umass.edu/~phuc/">Prof. VP Nguyen</a>.</p>
         <p>${escape(data.intro)}</p>
-        <p class="profile-links">${link('mailto:' + data.email, 'Email')} · ${link('assets/Sidharth_Anupkrishnan_CV.pdf', 'CV')} · ${link(data.github, 'GitHub')} · ${link(data.linkedin, 'LinkedIn')}</p>
+        <p class="profile-links">${link('mailto:' + data.email, 'Email')}${link('assets/Sidharth_Anupkrishnan_CV.pdf', 'CV')}${link(data.github, 'GitHub')}${link(data.linkedin, 'LinkedIn')}</p>
       </div>
       <img class="portrait" src="assets/Sid.jpg" alt="Sidharth Anupkrishnan" width="933" height="1400" fetchpriority="high">
     </section>
