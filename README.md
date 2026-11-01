@@ -1,10 +1,10 @@
 # Sidharth Anupkrishnan — personal website
 
-A static academic website with an ivory, burgundy, and serif theme. Intended URL: https://sidharthanup.github.io/.
+A static academic website with a simple ivory and burgundy design and readable typography. Live URL: https://sidharthanup.github.io/.
 
 ## Edit and preview
 
-Update `content.json`, then run `node build.mjs` to regenerate `index.html`. Presentation is in `styles.css`; the mobile menu is in `script.js`. There are no package dependencies or external font requests.
+Update `content.json`, then run `node build.mjs` to regenerate `index.html`. Presentation is in `styles.css`. Navigation wraps on small screens without JavaScript. There are no package dependencies or external font requests.
 
 Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory, then open http://127.0.0.1:4173/.
 
