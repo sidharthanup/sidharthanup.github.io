@@ -3,6 +3,8 @@ import { createHash } from 'node:crypto';
 
 const data = JSON.parse(await readFile(new URL('./content.json', import.meta.url), 'utf8'));
 const styleVersion = createHash('sha256').update(await readFile(new URL('./styles.css', import.meta.url))).digest('hex').slice(0, 12);
+const cvVersion = createHash('sha256').update(await readFile(new URL('./assets/Sidharth_Anupkrishnan_CV.pdf', import.meta.url))).digest('hex').slice(0, 12);
+const cvUrl = `assets/Sidharth_Anupkrishnan_CV.pdf?v=${cvVersion}`;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 const link = (url, label) => `<a href="${escape(url)}">${escape(label)}</a>`;
 const links = items => items?.length ? `<p class="entry-links">${items.map(l => link(l.url, l.label)).join(' · ')}</p>` : '';
@@ -49,7 +51,7 @@ const html = `<!doctype html>
   <a href="#main" class="skip-link">Skip to content</a>
   <header class="wrap site-header">
     <nav aria-label="Main navigation">
-      <a href="#about">About</a><a href="#research">Research</a><a href="#writing">Papers</a><a href="#experience">Experience</a><a href="#contact">Contact</a><a href="assets/Sidharth_Anupkrishnan_CV.pdf">CV</a>
+      <a href="#about">About</a><a href="#research">Research</a><a href="#writing">Papers</a><a href="#experience">Experience</a><a href="#contact">Contact</a><a href="${cvUrl}">CV</a>
     </nav>
   </header>
   <main id="main" class="wrap">
@@ -58,7 +60,7 @@ const html = `<!doctype html>
         <h1 id="name">${escape(data.name)}</h1>
         <p>I'm a PhD student in Computer Science at the University of Massachusetts Amherst, advised by <a href="https://people.cs.umass.edu/~phuc/">Prof. VP Nguyen</a>.</p>
         <p>${escape(data.intro)}</p>
-        <p class="profile-links">${link('mailto:' + data.email, 'Email')}${link('assets/Sidharth_Anupkrishnan_CV.pdf', 'CV')}${link(data.github, 'GitHub')}${link(data.linkedin, 'LinkedIn')}</p>
+        <p class="profile-links">${link('mailto:' + data.email, 'Email')}${link(cvUrl, 'CV')}${link(data.github, 'GitHub')}${link(data.linkedin, 'LinkedIn')}</p>
       </div>
       <img class="portrait" src="assets/Sid.jpg" alt="Sidharth Anupkrishnan" width="933" height="1400" fetchpriority="high">
     </section>

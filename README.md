@@ -10,6 +10,8 @@ Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory, then ope
 
 The downloadable CV is `assets/Sidharth_Anupkrishnan_CV.pdf`. Replace it with a newer PDF to update it. Publicly available E3Sense and EMG-FM-Bench preprints are linked; local manuscripts and the transcript are not copied into this project.
 
+The current downloadable CV is copied from `../latex_cv/Sid_Resume.pdf`. After replacing the PDF, run `node build.mjs` to refresh the versioned CV links and avoid stale browser caches.
+
 ## Publish to GitHub Pages
 
 1. Create the public repository `sidharthanup/sidharthanup.github.io`.
