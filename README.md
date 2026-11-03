@@ -1,10 +1,12 @@
 # Sidharth Anupkrishnan — personal website
 
-A static academic website with a simple ivory and burgundy design and readable typography. Live URL: https://sidharthanup.github.io/.
+A static academic website with an ivory and burgundy design and readable typography. Primary live URL: https://sidharthanupkrishnan.com/.
 
 ## Edit and preview
 
 Update `content.json`, then run `node build.mjs` to regenerate `index.html`. Presentation is in `styles.css`. Navigation wraps on small screens without JavaScript. There are no package dependencies or external font requests.
+
+The `url` in `content.json` sets the canonical and social URLs. The build also generates `sitemap.xml` and `robots.txt` for the primary domain. Cloudflare deploys from the same GitHub repository; the original GitHub Pages address remains available.
 
 Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory, then open http://127.0.0.1:4173/.
 

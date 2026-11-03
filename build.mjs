@@ -42,8 +42,8 @@ const html = `<!doctype html>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sidharth Anupkrishnan">
   <meta property="og:description" content="Wearable sensing, biosignals, and machine learning. PhD researcher at UMass Amherst.">
-  <meta property="og:url" content="https://sidharthanup.github.io/">
-  <link rel="canonical" href="https://sidharthanup.github.io/">
+  <meta property="og:url" content="${escape(data.url)}">
+  <link rel="canonical" href="${escape(data.url)}">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css?v=${styleVersion}">
 </head>
@@ -94,4 +94,6 @@ const html = `<!doctype html>
 </body>
 </html>`;
 await writeFile(new URL('./index.html', import.meta.url), html);
+await writeFile(new URL('./sitemap.xml', import.meta.url), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escape(data.url)}</loc></url></urlset>\n`);
+await writeFile(new URL('./robots.txt', import.meta.url), `User-agent: *\nAllow: /\n\nSitemap: ${new URL('sitemap.xml', data.url).href}\n`);
 console.log('Built index.html from content.json.');
