@@ -8,6 +8,8 @@ The site content is in `content.json`. Submitted and under-review manuscripts mu
 
 Verified external links:
 
+The CNS 2026 poster in the live-lecture manuscript entry is copied unchanged from `../CNS2026_Poster.pdf` to `assets/CNS2026_Poster.pdf` at the user's request. It presents related work with Dr. Lisa Sanders.
+
 - LinkedIn: https://www.linkedin.com/in/sidharthanup
 - E3Sense preprint: https://arxiv.org/abs/2609.26569
 - EMG-FM-Bench preprint (user supplied; title verified against arXiv): https://arxiv.org/abs/2610.06450

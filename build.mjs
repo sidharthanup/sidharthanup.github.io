@@ -15,9 +15,9 @@ const research = data.currentResearch.map(r => `<article class="entry">
 </article>`).join('\n');
 const manuscripts = data.manuscripts.map(p => `<article class="entry paper">
   <h3>${escape(p.title)}</h3>
-  <p class="metadata">${escape(p.role)} · ${p.year}<br>${escape(p.status)}</p>
+  <p class="metadata">${escape(p.role)} · ${p.year}<br>${escape(p.status)}${p.collaboration ? `<br>In collaboration with ${escape(p.collaboration)}` : ''}</p>
   <p>${escape(p.description)}</p>
-  ${links(p.links.map(l => ({...l, label:l.label + ' preprint'})))}
+  ${links(p.links)}
 </article>`).join('\n');
 const experience = data.experience.map(e => `<article class="entry">
   <div class="entry-heading"><h3>${escape(e.organization)}</h3><p class="date">${escape(e.period)}</p></div>

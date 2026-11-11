@@ -34,15 +34,16 @@
       "status": "Submitted to ACM CHI · Preprint available",
       "year": 2026,
       "description": "A head-mounted platform integrating EEG, eye tracking, and forehead EDA. A 30-participant study collected 450 engagement ratings; evaluation on 15 held-out forehead-sensing participants achieved 75.0% balanced within-one-level prediction versus a 63.0% majority-rating baseline.",
-      "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2609.26569"}]
+      "links": [{"label": "arXiv preprint", "url": "https://arxiv.org/abs/2609.26569"}]
     },
     {
       "title": "Multimodal Engagement Decoding During Live Classroom Lectures",
+      "collaboration": "Dr. Lisa Sanders, Neurocognition and Perception Lab",
       "role": "Co-first author",
       "status": "Submitted to IEEE ICASSP · Poster presented at CNS 2026",
       "year": 2026,
       "description": "A 12-participant live-lecture study synchronizing scalp EEG, wearable EEG, eye tracking, and instructor speech. A multimodal CRNN using headband EEG, gaze, and the speech envelope achieved MAE 0.628 and 91.2% balanced within-one accuracy on held-out participants.",
-      "links": []
+      "links": [{"label": "CNS 2026 poster (PDF)", "url": "assets/CNS2026_Poster.pdf"}]
     },
     {
       "title": "EMG-FM-Bench: A Comprehensive Benchmark for Foundation Model Transfer and Adaptation on Electromyography",
@@ -50,7 +51,7 @@
       "status": "Under review at ICLR 2027 · Preprint available",
       "year": 2026,
       "description": "A unified benchmark spanning 20 public datasets, more than one million EMG segments, and nine pretrained foundation models. My contributions include standardized preprocessing and evaluation across transfer, cross-user generalization, few-shot adaptation, and EMG-to-text decoding.",
-      "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2610.06450"}]
+      "links": [{"label": "arXiv preprint", "url": "https://arxiv.org/abs/2610.06450"}]
     }
   ],
   "experience": [
